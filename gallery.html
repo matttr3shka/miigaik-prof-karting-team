@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ============================================
+           СТИЛИ ДЛЯ ГАЛЕРЕИ
+           ============================================ */
+        
+        .gallery-intro {
+            font-family: radiotechnika, Arial, sans-serif;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* Секция этапа */
+        .event-section {
+            margin-bottom: 50px;
+        }
+
+        .event-title {
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 1.5rem;
+            color: #0061ff;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0061ff;
+        }
+
+        /* Сетка галереи */
+        .gallery-grid {
+            column-count: 3;
+            column-gap: 20px;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: #F5F5F5;
+            border-bottom: 3px solid #0061ff;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Адаптив */
+        @media (max-width: 900px) {
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 110px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="structure.html">СТРУКТУРА</a>
+                <a href="gallery.html" class="active">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> → 
+            <span>Галерея</span>
+        </div>
+
+        <h1>ГАЛЕРЕЯ КОМАНДЫ</h1>
+        <p class="gallery-intro">Фотографии с гонок MIIGAiK PROF Karting Team</p>
+
+        <!-- MSKS Light 1 -->
+        <section class="event-section">
+            <h2 class="event-title">🏁 MSKS LIGHT 1</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/1.JPG" alt="MSKS Light 1"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/2.JPG" alt="MSKS Light 1"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/3.JPG" alt="MSKS Light 1"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/4.JPG" alt="MSKS Light 1"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/5.JPG" alt="MSKS Light 1"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-1/6.JPG" alt="MSKS Light 1"></div>
+            </div>
+        </section>
+
+        <!-- MSKS Light 3 -->
+        <section class="event-section">
+            <h2 class="event-title">🏁 MSKS LIGHT 3</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/1.JPG" alt="MSKS Light 3"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/2.JPG" alt="MSKS Light 3"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/4.JPG" alt="MSKS Light 3"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/5.JPG" alt="MSKS Light 3"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/3.JPG" alt="MSKS Light 3"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-3/6.JPG" alt="MSKS Light 3"></div>
+            </div>
+        </section>
+
+        <!-- MSKS Light 5 -->
+        <section class="event-section">
+            <h2 class="event-title">🏁 MSKS LIGHT 5</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/1.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/2.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/4.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/5.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/6.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/7.JPG" alt="MSKS Light 5"></div>
+                <div class="gallery-item"><img src="images/gallery/msks-light-5/8.JPG" alt="MSKS Light 5"></div>
+                
+            </div>
+        </section>
+
+        <!-- Race Place Лето-Осень -->
+        <section class="event-section">
+            <h2 class="event-title">🌞 RACE PLACE ЛЕТО-ОСЕНЬ</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/1.jpg" alt="Race Place Лето-Осень"></div>
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/2.jpg" alt="Race Place Лето-Осень"></div>
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/3.jpg" alt="Race Place Лето-Осень"></div>
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/4.jpg" alt="Race Place Лето-Осень"></div>
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/5.jpg" alt="Race Place Лето-Осень"></div>
+                <div class="gallery-item"><img src="images/gallery/raceplace-summer/6.jpg" alt="Race Place Лето-Осень"></div>
+            </div>
+        </section>
+
+        <!-- День рождения Race Place 2025 -->
+        <section class="event-section">
+            <h2 class="event-title">🎂 ДЕНЬ РОЖДЕНИЯ RACE PLACE 2025</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/race-place-bday/1.JPG" alt="День рождения Race Place"></div>
+                <div class="gallery-item"><img src="images/gallery/race-place-bday/2.JPG" alt="День рождения Race Place"></div>
+                <div class="gallery-item"><img src="images/gallery/race-place-bday/3.JPG" alt="День рождения Race Place"></div>
+            
+            </div>
+        </section>
+
+        <!-- Новый год в Race Place -->
+        <section class="event-section">
+            <h2 class="event-title">🎄 НОВЫЙ ГОД В RACE PLACE</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/newyear/1.JPG" alt="Новый год в Race Place"></div>
+                <div class="gallery-item"><img src="images/gallery/newyear/2.JPG" alt="Новый год в Race Place"></div>
+                <div class="gallery-item"><img src="images/gallery/newyear/3.JPG" alt="Новый год в Race Place"></div>
+            </div>
+        </section>
+
+        <!-- Спартакиада Моспром -->
+        <section class="event-section">
+            <h2 class="event-title">🏅 СПАРТАКИАДА МОСПРОМ</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/mosprom/1.JPG" alt="Спартакиада Моспром"></div>
+                <div class="gallery-item"><img src="images/gallery/mosprom/2.JPG" alt="Спартакиада Моспром"></div>
+                <div class="gallery-item"><img src="images/gallery/mosprom/4.JPG" alt="Спартакиада Моспром"></div>
+                <div class="gallery-item"><img src="images/gallery/mosprom/5.JPG" alt="Спартакиада Моспром"></div>
+                <div class="gallery-item"><img src="images/gallery/mosprom/3.JPG" alt="Спартакиада Моспром"></div>
+                <div class="gallery-item"><img src="images/gallery/mosprom/6.JPG" alt="Спартакиада Моспром"></div>
+                
+            </div>
+        </section>
+
+        <!-- Grace Race -->
+        <section class="event-section">
+            <h2 class="event-title">👑 GRACE RACE</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery/grace-race/1.JPG" alt="Grace Race"></div>
+                <div class="gallery-item"><img src="images/gallery/grace-race/2.JPG" alt="Grace Race"></div>
+                <div class="gallery-item"><img src="images/gallery/grace-race/3.JPG" alt="Grace Race"></div>
+                <div class="gallery-item"><img src="images/gallery/grace-race/4.JPG" alt="Grace Race"></div>
+                <div class="gallery-item"><img src="images/gallery/grace-race/5.JPG" alt="Grace Race"></div>
+                <div class="gallery-item"><img src="images/gallery/grace-race/6.JPG" alt="Grace Race"></div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>

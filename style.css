@@ -1,0 +1,378 @@
+/* ============================================
+   MIIGAiK PROF KARTING TEAM - MAIN STYLESHEET
+   Цвета: белый фон, чёрный текст, синий (#0061ff), тёмно-синий (#0042ae)
+   Шрифты: Ethnocentric (заголовки), Radiotechnika (текст)
+   ============================================ */
+
+/* ============================================
+   ПОДКЛЮЧЕНИЕ ЛОКАЛЬНЫХ ШРИФТОВ
+   ============================================ */
+
+/* Ethnocentric — для заголовков (гоночный, агрессивный стиль) */
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('fonts/ethnocentricrus_lat_extra_expandedregular.woff2') format('woff2'),
+         url('fonts/ethnocentricrus_lat_extra_expandedregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Radiotechnika — для основного текста (технический, читаемый) */
+@font-face {
+    font-family: 'Radiotechnika';
+    src: url('fonts/Radiotechnika.woff2') format('woff2'),
+         url('fonts/Radiotechnika.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================================
+   БАЗОВЫЕ СТИЛИ
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* ============================================
+   НАВИГАЦИЯ (синяя шапка, синяя полоска)
+   ============================================ */
+nav {
+    background: #0061ff;
+    padding: 1px 0;
+    border-bottom: 2px solid #0061ff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo {
+    margin-top: -10px;  
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* ============================================
+   ЗАГОЛОВКИ (Ethnocentric)
+   ============================================ */
+h1 {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 3rem;
+    margin: 30px 0 10px;
+    color: #0F0F0F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 span {
+    color: #0061ff;
+}
+
+h2 {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    border-left: 5px solid #0061ff;
+    padding-left: 20px;
+    color: #0F0F0F;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #0061ff;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0F0F0F;
+}
+
+/* ============================================
+   КАСТОМНЫЕ ТЕГИ t1 и t2 (Radiotechnika)
+   ============================================ */
+t1 {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 28px;
+}
+
+t2 {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Обычные параграфы тоже Radiotechnika */
+p {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+}
+
+/* ============================================
+   КНОПКА (Ethnocentric)
+   ============================================ */
+.btn {
+    display: inline-block;
+    background: #0061ff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #0042ae;
+}
+
+/* ============================================
+   СЕТКА ДЛЯ СОТРУДНИКОВ
+   ============================================ */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.member-card {
+    flex: 1 1 200px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0061ff;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card h3 {
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    color: #0F0F0F;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #0061ff;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ethnocentric', 'Impact', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.member-role {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #0061ff;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.member-desc {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* ============================================
+   СПИСОК ЗАДАЧ
+   ============================================ */
+.task-list {
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.task-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #0F0F0F;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-icon {
+    color: #0061ff;
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+
+/* ============================================
+   ТАБЛИЦА ХАРАКТЕРИСТИК
+   ============================================ */
+.specs-table {
+    width: 100%;
+    background: #F5F5F5;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.specs-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #0F0F0F;
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.specs-table tr td:first-child {
+    font-weight: bold;
+    color: #0061ff;
+    width: 40%;
+}
+
+/* ============================================
+   ХЛЕБНЫЕ КРОШКИ
+   ============================================ */
+.breadcrumbs {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #666;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: #0061ff;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   ПОДВАЛ
+   ============================================ */
+footer {
+    background: #0F0F0F;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 2px solid #0061ff;
+}
+
+footer p {
+    font-family: 'Radiotechnika', Arial, sans-serif;
+    color: #aaa;
+}
+
+/* ============================================
+   АДАПТИВ ДЛЯ МОБИЛЬНЫХ
+   ============================================ */
+@media (max-width: 700px) {
+    nav .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

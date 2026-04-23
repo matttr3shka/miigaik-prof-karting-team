@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тех Блок | MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tech-hero {
+            padding: 20px 0;
+            text-align: center;
+            margin: 20px 0 35px;
+        }
+
+        .tech-hero h1 {
+            color: #0F0F0F;
+            font-size: 2.5rem;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .tech-hero p {
+            color: #555;
+            font-size: 1.1rem;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #F5F5F5;
+            color: #0061ff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #EEEEEE;
+        }
+
+        .join-section {
+            background: linear-gradient(135deg, #0061ff 0%, #0045cc 100%);
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .join-section h3 {
+            color: white;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .join-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .member-avatar.member-avatar-photo {
+            position: static;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .member-avatar.member-avatar-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .member-card:has(.member-avatar-photo) h3,
+        .member-card:has(.member-avatar-photo) .member-role,
+        .member-card:has(.member-avatar-photo) .member-desc {
+            color: #0F0F0F;
+            text-shadow: none;
+        }
+
+        .member-card:has(.member-avatar-photo) {
+            aspect-ratio: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 120px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="structure.html">СТРУКТУРА</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> → 
+            <a href="structure.html">Структура</a> → 
+            <span style="color: #0F0F0F;">Тех Блок</span>
+        </div>
+
+        <div class="tech-hero">
+            <div>
+                <h1>🏎️ ТЕХНИЧЕСКИЙ БЛОК</h1>
+                <p>Пилоты, механики, инженеры. Сердце команды на трассе и в боксах</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>КОМАНДА</h2>
+            <p style="color: #666; margin-bottom: 20px;">Лучшие гонщики, готовые к любым вызовам на трассе</p>
+            <div class="team-grid">
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/treschev.jpg" alt="Матвей Трещёв">
+                    </div>
+                    <h3>Матвей Трещёв</h3>
+                    <div class="member-role">Пилот, инженер, тренер</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Шитлин Максим.jpg" alt="Максим Шитлин">
+                    </div>
+                    <h3>Максим Шитлин</h3>
+                    <div class="member-role">Пилот, инженер, тренер</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Войтенко Константин.jpg" alt="Константин Войтенко">
+                    </div>
+                    <h3>Константин Войтенко</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Мелентьева Елизавета.jpg" alt="Елизавета Мелентьева">
+                    </div>
+                    <h3>Елизавета Мелентьева</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Марков Дмитрий.jpg" alt="Дмитрий Марков">
+                    </div>
+                    <h3>Дмитрий Марков</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Хохлов Дмитрий.jpg" alt="Дмитрий Хохлов">
+                    </div>
+                    <h3>Дмитрий Хохлов</h3>
+                    <div class="member-role">инженер</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Прозоров Алексей.jpg" alt="Алексей Прозоров">
+                    </div>
+                    <h3>Алексей Прозоров</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Протасов Игорь 3.jpg" alt="Игорь Протасов">
+                    </div>
+                    <h3>Игорь Протасов</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Бабушкина Дарья.jpg" alt="Дарья Бабушкина">
+                    </div>
+                    <h3>Дарья Бабушкина</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Т Лушкин Елисей.jpg" alt="Елисей Лушкин">
+                    </div>
+                    <h3>Елисей Лушкин</h3>
+                    <div class="member-role">Пилот</div>
+                    <div class="member-desc"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>ЗАДАЧИ ТЕХ БЛОКА</h2>
+            <div class="task-list">
+                <div class="task-item"><span class="task-icon">🏁</span> Подготовка к соревнованиям</div>
+                <div class="task-item"><span class="task-icon">📊</span> Сбор и анализ телеметрии с каждого заезда</div>
+            </div>
+        </section>
+
+        <div class="join-section">
+            <h3>ПРИСОЕДИНЯЙСЯ К НАМ</h3>
+            <p>Если ты увлекаешься картингом и хочешь развивать технические навыки в команде, свяжись с нами!</p>
+            <a href="https://forms.yandex.ru/u/69ea5f3550569025bc385711" class="btn" style="background: white; color: #0061ff;">ПОДАТЬ ЗАЯВКУ</a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="structure.html" class="back-link">← Вернуться на структуру</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>

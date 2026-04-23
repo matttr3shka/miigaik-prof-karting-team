@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа Блок | MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .media-hero {
+            padding: 20px 0;
+            text-align: center;
+            margin: 20px 0 35px;
+        }
+
+        .media-hero h1 {
+            color: #0F0F0F;
+            font-size: 2.5rem;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .media-hero p {
+            color: #555;
+            font-size: 1.1rem;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #F5F5F5;
+            color: #0061ff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #EEEEEE;
+        }
+
+        .join-section {
+            background: linear-gradient(135deg, #0061ff 0%, #0045cc 100%);
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .join-section h3 {
+            color: white;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .join-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .member-avatar.member-avatar-photo {
+            position: static;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .member-avatar.member-avatar-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .member-card:has(.member-avatar-photo) h3,
+        .member-card:has(.member-avatar-photo) .member-role,
+        .member-card:has(.member-avatar-photo) .member-desc {
+            color: #0F0F0F;
+            text-shadow: none;
+        }
+
+        .member-card:has(.member-avatar-photo) {
+            aspect-ratio: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 120px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="structure.html">СТРУКТУРА</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> → 
+            <a href="structure.html">Структура</a> → 
+            <span style="color: #0F0F0F;">Медиа Блок</span>
+        </div>
+
+        <div class="media-hero">
+            <div>
+                <h1>📸 МЕДИА БЛОК</h1>
+                <p>Фотографы, видеографы, дизайнеры и SMM-специалисты. Визуальный стиль команды</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>КОМАНДА </h2>
+            <p style="color: #666; margin-bottom: 20px;">Творческие специалисты, создающие контент и образ команды</p>
+            
+            <div class="team-grid">
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/М Черненкова Полина .jpg" alt="Полина Черненкова">
+                    </div>
+                    <h3>Полина Черненкова</h3>
+                    <div class="member-role">Фотограф, SMM</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/М Рябико Анна.jpg" alt="Анна Рябико">
+                    </div>
+                    <h3>Анна Рябико</h3>
+                    <div class="member-role">Дизайнер, SMM</div>
+                    <div class="member-desc"></div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/М Емкужева Карина.jpg" alt="Карина Емкужева">
+                    </div>
+                    <h3>Карина Емкужева</h3>
+                    <div class="member-role">Репортёр</div>
+                    <div class="member-desc"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🎬 ЗАДАЧИ МЕДИА БЛОКА</h2>
+            <div class="task-list">
+                <div class="task-item"><span class="task-icon">📷</span> Фото- и видеосъёмка всех тренировок и соревнований</div>
+                <div class="task-item"><span class="task-icon">🎨</span> Разработка командной атрибутики</div>
+                <div class="task-item"><span class="task-icon">📱</span> Регулярное ведение социальных сетей команды</div>
+                <div class="task-item"><span class="task-icon">📰</span> Написание пресс-релизов и постов о результатах</div>
+            </div>
+        </section>
+
+        <div class="join-section">
+            <h3>ПРИСОЕДИНЯЙСЯ К НАМ</h3>
+            <p>Если ты творческий человек и хочешь создавать контент для команды, свяжись с нами!</p>
+            <a href="https://forms.yandex.ru/u/69ea5f3550569025bc385711" class="btn" style="background: white; color: #0061ff;">ПОДАТЬ ЗАЯВКУ</a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="structure.html" class="back-link">← Вернуться на структуру</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>

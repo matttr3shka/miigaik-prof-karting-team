@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура | MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили для древа */
+        .org-tree {
+            margin: 50px 0;
+        }
+
+        .leadership-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .leader-card {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .leader-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #0061ff;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            overflow: hidden;
+        }
+
+        .leader-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .leader-name {
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0F0F0F;
+        }
+
+        .leader-role {
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            color: #000000;
+            font-size: 0.9rem;
+        }
+
+        /* Ветви вниз */
+        .branches {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .branch {
+            text-align: center;
+            flex: 1;
+            max-width: 250px;
+        }
+
+        .branch-connector {
+            width: 2px;
+            height: 40px;
+            background: #0061ff;
+            margin: 0 auto;
+        }
+
+        .branch-card {
+            background: #F5F5F5;
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: #0F0F0F;
+            display: block;
+            border-bottom: 4px solid #0061ff;
+            transition: all 0.3s;
+        }
+
+        .branch-card:hover {
+            transform: translateY(-5px);
+            background: #EEEEEE;
+        }
+
+        .branch-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .branch-card h3 {
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            color: #0F0F0F;
+            margin-bottom: 10px;
+        }
+
+        .branch-card p {
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Горизонтальная линия между ветвями */
+        .tree-lines {
+            position: relative;
+            height: 2px;
+            background: #0061ff;
+            width: 80%;
+            margin: 0 auto;
+            top: -20px;
+            z-index: -1;
+        }
+
+        @media (max-width: 700px) {
+            .leadership-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .branches {
+                flex-direction: column;
+                align-items: center;
+            }
+            .tree-lines {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 120px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" >ГЛАВНАЯ</a>
+                <a href="structure.html" class="active">СТРУКТУРА</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> → 
+            <span style="color: #0F0F0F;">Структура команды</span>
+        </div>
+
+        <h1 style="color: #0F0F0F;">СТРУКТУРА КОМАНДЫ</h1>
+
+        <div class="org-tree">
+            <!-- Руководство -->
+            <div class="leadership-row">
+                <!-- Руководитель -->
+                <div class="leader-card">
+                    <div class="leader-photo">
+                        <img src="images/members/treschev.jpg" alt="Трещёв Матвей" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">МТ</span>
+                    </div>
+                    <div class="leader-name">Трещёв Матвей</div>
+                    <div class="leader-role">Руководитель команды</div>
+                </div>
+                <!-- Заместитель -->
+                <div class="leader-card">
+                    <div class="leader-photo">
+                        <img src="images/members/Т Шитлин Максим.jpg" alt="Шитлин Максим" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">МШ</span>
+                    </div>
+                    <div class="leader-name">Шитлин Максим</div>
+                    <div class="leader-role">Заместитель руководителя</div>
+                </div>
+            </div>
+
+            <!-- Соединительные линии -->
+            <div style="display: flex; justify-content: center; gap: 60px; margin-top: -10px;">
+                <div style="width: 2px; height: 30px; background: #0061ff;"></div>
+                <div style="width: 2px; height: 30px; background: #0061ff;"></div>
+            </div>
+            <div class="tree-lines"></div>
+
+            <!-- Ветви к отделам -->
+            <div class="branches">
+                <!-- Тех блок -->
+                <div class="branch">
+                    <div class="branch-connector"></div>
+                    <a href="tech.html" class="branch-card">
+                        <div class="branch-icon">🏎️🔧</div>
+                        <h3>ТЕХ БЛОК</h3>
+                        <p>Пилоты и инженеры</p>
+                    </a>
+                </div>
+                <!-- Медиа блок -->
+                <div class="branch">
+                    <div class="branch-connector"></div>
+                    <a href="media.html" class="branch-card">
+                        <div class="branch-icon">📸🎨</div>
+                        <h3>МЕДИА БЛОК</h3>
+                        <p>Фотографы, дизайнеры, SMM</p>
+                    </a>
+                </div>
+                <!-- HR блок -->
+                <div class="branch">
+                    <div class="branch-connector"></div>
+                    <a href="hr.html" class="branch-card">
+                        <div class="branch-icon">👥🎉</div>
+                        <h3>HR БЛОК</h3>
+                        <p>Кадры и мероприятия</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>

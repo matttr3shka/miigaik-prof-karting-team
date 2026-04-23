@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ============================================
+           СТИЛИ ДЛЯ ГЛАВНОЙ СТРАНИЦЫ
+           ============================================ */
+        
+        .main-title {
+            color: #0F0F0F;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/index.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .banner h1 {
+            border: none;
+            color: white;
+            font-size: 2.5rem;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .banner h2 {
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .banner .btn {
+            margin-top: 10px;
+        }
+
+        .stats-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 60px 0;
+        }
+
+        .stat-card {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .stat-card h3 {
+            color: #0061ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .stat-card p {
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .cta-block {
+            text-align: center;
+            padding: 40px;
+            background: #0F0F0F;
+            border-radius: 8px;
+        }
+
+        .cta-block h3 {
+            color: white;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .cta-block h4 {
+            color: #aaa;
+            margin-bottom: 20px;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 120px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">ГЛАВНАЯ</a>
+                <a href="structure.html">СТРУКТУРА</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="main-title">MIIGAiK PROF KARTING TEAM</h1>
+        
+        <t1>Создана 25 августа 2025 года. Это картинговая команда университета на базе Профсоюза Обучающихся МИИГАиК. Курируется Студенческим центром культурно-творческих и спортивных проектов.</t1>
+
+        <!-- Баннер -->
+        <div class="banner">
+            <div>
+                <h1>МЫ — ЭТО БОЛЬШЕ, ЧЕМ ГОНКИ</h1>
+                <h2>Хочешь вступить? Сначала ознакомься со структурой команды</h2>
+                <a href="structure.html" class="btn">УЗНАТЬ СТРУКТУРУ</a>
+            </div>
+        </div>
+
+        <!-- Ключевые показатели -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>🏆 5/35 место</h3>
+                <p>в студенческом чемпионате MSKS Light</p>
+            </div>
+            <div class="stat-card">
+                <h3>👥 20 человек</h3>
+                <p>Пилоты, инженеры, медиа и HR в одной команде.</p>
+            </div>
+        </div>
+
+        <!-- Блок с призывом -->
+        <div class="cta-block">
+            <h3>ХОЧЕШЬ С НАМИ?</h3>
+            <h4>Присоединяйся к нашему фан-клубу</h4>
+            <a href="https://t.me/+w9Vq2df_p7wwNTMy" class="btn">чат фан-клуба в тг</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>

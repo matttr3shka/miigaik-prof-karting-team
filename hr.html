@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Блок | MIIGAiK PROF Karting Team</title>
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hr-hero {
+            padding: 20px 0;
+            text-align: center;
+            margin: 20px 0 35px;
+        }
+
+        .hr-hero h1 {
+            color: #0F0F0F;
+            font-size: 2.5rem;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+        }
+
+        .hr-hero p {
+            color: #555;
+            font-size: 1.1rem;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            margin-top: 10px;
+        }
+
+        .event-card {
+            background: #1A1A1A;
+            padding: 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #E63946;
+            flex-wrap: wrap;
+        }
+
+        .event-date {
+            background: #E63946;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        .event-card div:last-child {
+            color: white;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+        }
+
+        .event-card strong {
+            color: #E63946;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0061ff 0%, #0045cc 100%);
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h3 {
+            color: white;
+            font-family: 'Ethnocentric', 'Impact', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #F5F5F5;
+            color: #0061ff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'Radiotechnika', Arial, sans-serif;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            background: #EEEEEE;
+        }
+
+        .member-avatar.member-avatar-photo {
+            position: static;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .member-avatar.member-avatar-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .member-card:has(.member-avatar-photo) h3,
+        .member-card:has(.member-avatar-photo) .member-role,
+        .member-card:has(.member-avatar-photo) .member-desc {
+            color: #0F0F0F;
+            text-shadow: none;
+        }
+
+        .member-card:has(.member-avatar-photo) {
+            aspect-ratio: auto;
+            display: block;
+        }
+
+        .hr-team-grid {
+            justify-content: center;
+        }
+
+        .hr-team-grid .member-card {
+            flex: 0 1 25%;
+            min-width: 220px;
+            max-width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Karting Team" style="height: 120px;">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="structure.html">СТРУКТУРА</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> → 
+            <a href="structure.html">Структура</a> → 
+            <span style="color: #0F0F0F;">HR Блок</span>
+        </div>
+
+        <div class="hr-hero">
+            <div>
+                <h1>👥 HR БЛОК</h1>
+                <p>Кадровое обеспечение, адаптация новичков, организация мероприятий и тимбилдингов</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>КОМАНДА</h2>
+            <p style="color: #aaa; margin-bottom: 30px;">Профессионалы, которые заботятся о развитии людей в команде</p>
+            
+            <div class="team-grid hr-team-grid">
+                <div class="member-card">
+                    <div class="member-avatar member-avatar-photo">
+                        <img src="images/members/Hr Исакин Михаил.jpg" alt="Михаил Исакин">
+                    </div>
+                    <h3>Михаил Исакин</h3>
+                    <div class="member-role">Организатор</div>
+                    <div class="member-desc"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>ЧЕМ МЫ ЗАНИМАЕМСЯ</h2>
+            <div class="task-list">
+                <div class="task-item"><span class="task-icon">📝</span> Публикация вакансий и проведение отбора кандидатов</div>
+                <div class="task-item"><span class="task-icon">🤝</span> Организация внешних мероприятий для привлечения новых участников</div>
+                <div class="task-item"><span class="task-icon">🎉</span> Организация тимбилдингов и внутренних мероприятий</div>
+                <div class="task-item"><span class="task-icon">🏆</span> Координация выездов (логистика, проживание)</div>
+                <div class="task-item"><span class="task-icon">📊</span> Ведение базы участников и учёт посещаемости</div>
+            </div>
+        </section>
+
+        <div class="cta-section">
+            <h3>ХОЧЕШЬ ПРИСОЕДИНИТЬСЯ?</h3>
+            <p>Если ты хочешь стать частью нашей команды и внести свой вклад в развитие картинга в MIIGAiK, свяжись с нами!</p>
+            <a href="https://forms.yandex.ru/u/69ea5f3550569025bc385711" class="btn">ПОДАТЬ ЗАЯВКУ</a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="structure.html" class="back-link">← Вернуться на структуру</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MIIGAiK PROF Karting Team</p>
+    </footer>
+</body>
+</html>
